@@ -248,11 +248,58 @@ button:hover{
   }
 
 }
+  }
+.menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+}
+
+.menu button {
+  background: #00e5ff;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-content {
+  display: none;
+  background: white;
+  margin-top: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-content a:hover {
+  background: #eee;
+}
+
+.menu:hover .menu-content {
+  display: block;
+}
 </style>
 </head>
 
 <body>
-
+<div class="container">
+<div class="menu">
+  <button>☰ القائمة</button>
+  <div class="menu-content">
+    <a href="#">من نحن</a>
+    <a href="#">اتصل بنا</a>
+    <a href="#">سياسة الخصوصية</a>
+  </div>
+</div>
 <div class="container">
 
 <h1> 🤖 سيرتي الذاتيه </h1>
